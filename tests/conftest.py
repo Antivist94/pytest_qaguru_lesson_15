@@ -36,7 +36,7 @@ def browser_manager_mobile(request):
 
 
 @pytest.fixture(scope = "function",
-                params = [(1920, 1080), (1280, 720), (1013, 720), (320, 640), (360, 740), (412, 869)],
+                params = [(1920, 1080), (1280, 720), (1024, 768), (320, 640), (360, 740), (412, 869)],
                 ids = ["WEB_width 1920", "WEB_width 1280", "WEB_width 1013", "Mobile_640x320", "Mobile_740x360",
                        "Mobile_869x412"])
 def browser_manager(request):
